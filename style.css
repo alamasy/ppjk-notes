@@ -14,6 +14,10 @@ body {
     color: beige;
 }
 
+main {
+    display: flex;
+}
+
 .toggle__menu {
     position: absolute;
     bottom: 5%;
@@ -71,4 +75,15 @@ body {
 
 .bab > li a {
     display: block;    
+}
+
+.content {
+    width: 60%;
+    height: 100vh;
+    margin: auto;
+    color: #655DBB;
+}
+
+.content > ul li {
+    margin-bottom: 12px;
 }
