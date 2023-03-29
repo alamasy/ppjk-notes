@@ -9,6 +9,11 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+    color: white;
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
     color: beige;
@@ -16,6 +21,7 @@ body {
 
 main {
     display: flex;
+    height: 100vh;
 }
 
 .toggle__menu {
@@ -41,7 +47,7 @@ main {
 
 .nav {
     width: 320px;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: scroll;
     overflow-x: hidden;
     background-color: #655DBB;
@@ -79,11 +85,31 @@ main {
 
 .content {
     width: 60%;
-    height: 100vh;
-    margin: auto;
+    margin-inline: auto;
     color: #655DBB;
+    overflow-x: hidden;
 }
 
 .content > ul li {
     margin-bottom: 12px;
+}
+
+.daerah__pabean {
+    width: 60%;
+    height: 250px;
+    margin-inline: auto;
+    margin-top: 42px;
+    margin-bottom: 102px;
+    display: flex;
+    justify-content: space-around;
+    background-color: coral;
+    border: 2px solid red;
+}
+
+.kawasan__pabean {
+    background-color: rgba(0, 0, 0, .4);
+    width: 40%;
+    height: 200px;
+    margin: auto;
+    border-radius: 12px;
 }
