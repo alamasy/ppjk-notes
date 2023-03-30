@@ -22,12 +22,13 @@ body {
 main {
     display: flex;
     height: 100vh;
+    position: relative;
 }
 
 .toggle__menu {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
+    position: fixed;
+    bottom: 20px;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,13 +48,19 @@ main {
 
 .nav {
     width: 320px;
-    /* height: 100vh; */
     overflow: scroll;
     overflow-x: hidden;
     background-color: #655DBB;
     padding-inline: 12px;
-
+    transform: translateX(-320px);
+    position: absolute;
+    z-index: 2;
     text-align: left;
+    transition: all ease-out .25s;
+}
+
+.show {
+    transform: translateX(0);
 }
 
 .bagian {
